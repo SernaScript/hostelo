@@ -139,6 +139,9 @@ export default function Navbar() {
             <a href="#cartagena" className="hover:text-stone-900 transition-colors">
               {t.nav.cartagena}
             </a>
+            <a href="#parodia" className="hover:text-stone-900 transition-colors">
+              {t.nav.parodyClub}
+            </a>
             <a href="#concierge" className="hover:text-amber-800 transition-colors flex items-center gap-1 text-amber-700 font-semibold">
               <Sparkles className="w-3.5 h-3.5 text-amber-600" />
               {t.nav.vipConcierge}
@@ -208,6 +211,13 @@ export default function Navbar() {
                 className="py-1.5 border-b border-stone-100 hover:text-stone-900"
               >
                 {t.nav.cartagena}
+              </a>
+              <a 
+                href="#parodia" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="py-1.5 border-b border-stone-100 hover:text-stone-900"
+              >
+                {t.nav.parodyClub}
               </a>
               <a 
                 href="#concierge" 
